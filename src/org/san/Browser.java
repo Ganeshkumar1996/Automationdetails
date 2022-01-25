@@ -36,10 +36,7 @@ public class Browser {
 				driver.switchTo().window(str);
 			}
 		}
-		WebElement txt = driver.findElement(By.xpath("//pre[contains(text(),'Windows Handling ')]"));
-		String txtrtn = txt.getText();
-        System.out.println(txtrtn);
-        
+		
 		
 	
 		
