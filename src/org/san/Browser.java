@@ -31,26 +31,12 @@ public class Browser {
 		Thread.sleep(2000);
 		String win1 = driver.getWindowHandle();
 		Set<String> win2 = driver.getWindowHandles();
-		for (String str : win2) {
-			if (!win1.equals(win2)) {
-				driver.switchTo().window(str);
-			}
+		
 		}
-		WebElement txt = driver.findElement(By.xpath("//pre[contains(text(),'Windows Handling ')]"));
-		String txtrtn = txt.getText();
-        System.out.println(txtrtn);
-        
-		
-	
-		
-		
-		
-		
-		
 		
 		}
 	
 	
-}
+
 	
 
